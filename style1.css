@@ -1,0 +1,198 @@
+/*
+Author: Jared Owen
+Date: 10//11/2023
+File Name: styles.css
+*/
+
+/* CSS Reset */
+/*
+  Student Name: Jared Owen
+	File Name: styles.css
+	Current Date: 10/25/2023
+*/
+
+/* CSS reset */
+
+/* Style rule for body and images */
+body { 
+	margin: 0;
+	padding: 0;
+	background-color: #00BFFF;
+}
+
+.navbar ul{
+	list-style: none;
+	background: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+.navbar li{
+	display: inline-block;
+}
+
+.navbar a{
+	text-decoration: none;
+	width: 100px;
+	color: black;
+	display: block;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+.navbar a:hover{
+	background-color: yellow;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles for Mobile Layout */
+
+/* Hide tablet-desktop content */
+    .tablet-desktop {
+        display: none;
+    }
+
+/* Style rule for the header */
+header {
+	padding: 2%;
+	color: #110934;
+	text-align: center;
+	top:0;
+	position: absolute;
+}
+
+/* Style rules for navigation area */
+nav {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+	position: absolute;
+    width: 100%;
+	height: 10px;
+    border: 3px solid white;
+    padding: 0px;
+}
+
+/* Style rules for the main content  */
+main {
+	display: block;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	font-size: 1em;
+	padding: 1em;
+	background-image: linear-gradient(to right, #00BFFF, gray);
+}
+
+/* Style rule for footer */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 1em;
+    color: #fff;
+	bottom: 0;
+	position: absolute;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 488px), {
+    
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        display: block;
+        margin: 0.5%;
+    }
+    
+    nav li a {
+        padding: 0.1em 1em;
+		display: block;
+    }
+    
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 874px) {
+ 
+    /*following rule is for the header when viewed in desktop*/
+    header {
+		padding: 2%;
+		color: #110934;
+		text-align: center;
+		top:0;
+    }
+
+    /* Desktop Viewport: Style rules for nav */
+
+    nav ul {
+      text-align: right;
+    }
+    nav li {
+        border-radius: 0;
+    }
+
+    nav li a {
+        display: inline-block;
+        padding: 0.7em;   
+    }
+
+
+    
+
+    /* Desktop Viewport: Style rules for the main content */
+    main {
+        border-style: none;
+        margin-bottom: 1em 0;
+        overflow: auto;
+    }
+
+    /* Desktop Viewport: Style rule for footer */
+    footer {
+        clear: left;
+    }
+
+}
+
+/* Media Query for Wide Desktop Viewport */
+@media screen and (min-width: 1440px) {
+    
+	header {
+		padding: 2%;
+		text-align: center;
+		top:0;
+    }
+    body {
+        margin: 0;
+	}
+}
+
+/* Media Query for Print Viewport */
+@media print {
+    
+	header {
+		padding: 2%;
+		text-align: center;
+		top:0;
+    }
+    body {
+        margin: 0;
+	}
+}
+		
